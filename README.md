@@ -1,45 +1,41 @@
-# Consumer Complaint Analysis
+# Banking & Fintech Consumer Complaint Analysis (2017–2023)
 
-## Overview
+I built this project around a cleaned complaints dataset to understand **what banking/fintech customers complain about most**, how complaints change over time, and how companies respond.
 
-This project analyzes a dataset of consumer complaints related to financial products and services. The goal is to identify key trends, common issues, and potential areas for improvement in the industry.
+## What this analysis answers
+- Which **products** generate the most complaints?
+- What are the **top issues** customers report?
+- Which states show the highest complaint volume?
+- What are the most common **company response types**?
+- Are responses typically marked as **timely**?
 
-## Data Source
+## Quick results from this dataset
+- Total complaints analyzed: **62,516**
+- Date range: **2017-05-01 → 2023-08-28**
+- Top product: **checking or savings account**
+- Top issue: **managing an account**
+- Top state: **CA**
+- Most common response: **closed with explanation**
+- Timely response rate: **93.8%**
 
-The dataset was obtained from [Kaggle](https://www.kaggle.com/). A sample of the data is included in this repository. The full dataset can be downloaded from Kaggle.
+## Files in this repo
+- `consumer_complaint_analysis.ipynb` — notebook (cleaning + analysis + charts)
+- `data/consumer_complaints_banking_sample_20000.csv` — representative sample (GitHub-friendly)
+- `outputs/` — charts (PNG) and cleaned dataset export (generated when you run the notebook)
 
-## Tools Used
+## Charts (in outputs/)
+- Top products by complaint volume
+- Top issues
+- Response types
+- Top states
+- Monthly trend
 
-*   Python
-*   Pandas
-*   Matplotlib
-*   Seaborn
-*   Google Colab
+## How to run
+**Google Colab**
+1) Open the notebook in Colab.
+2) Upload `data/consumer_complaints_banking_sample_20000.csv` (or your full file if you have it).
+3) Run all cells.
+4) Upload the charts from `outputs/` back to GitHub.
 
-## Key Findings
-
-*   The most frequent complaint category is "Debt collection," indicating significant issues in this area.
-*   There's a noticeable increase in complaints related to "Credit reporting, credit repair services, or other personal consumer reports" over time.
-*   The most common company responses are "Closed with explanation" and "Closed with monetary relief."
-
-## Visualizations
-
-The analysis included the following visualizations:
-*   A bar chart showing the distribution of complaint categories, with "Debt collection" having the highest number of complaints.
-*   A time series plot illustrating the trend of complaints over time, showing an increase in "Credit reporting, credit repair services, or other personal consumer reports" complaints.
-*   A bar chart displaying the top 10 sub-issues for "Incorrect information on your report," with "Information belongs to someone else" being the most frequent.
-*   A bar chart displaying the top 10 products with the most complaints, with "Checking or savings account" having the highest number of complaints.
-*   A bar chart displaying the top 10 issues with the most complaints, with "Managing an account" having the highest number of complaints.
-*   A stacked bar chart showing the relationship between submission method and timely response, with "Web" submissions having the highest number of timely responses.
-*   A bar chart displaying the top 10 company responses to consumers, with "Closed with explanation" having the highest count.
-*   A line plot illustrating the complaint volume over time, showing a peak in 2022.
-
-## How to Run the Code
-
-1.  Clone this repository.
-2.  Download the full dataset from Kaggle and place it in the same directory as the notebook to run the full analysis. Alternatively, use the sample dataset provided.
-3.  Open and run the `Consumer_complaint.ipynb` file in Google Colab or your local Python environment.
-
-## Author
-
-GbemiAbe
+## Notes
+- This repo includes a 20k-row sample to keep uploads small. The full cleaned file is ~17.7MB.
